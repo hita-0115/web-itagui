@@ -1,127 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos y Festividades</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" href="-b-02.png" type="image/png">
     <link rel="stylesheet" href="web-css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">    
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-        <!-- logo y nombre del proyecto -->
-    <nav class="navbar bg-body-tertiary">
+    <!-- logo y nombre del proyecto -->
+    <nav class="navbar" style="background-color: #e3f2fd;" data-bs-theme="light" class="navbar bg-body-tertiary">
         <div class="container" style="display: flex; flex-direction: row;">
             <a class="navbar-brand" href="#">
                 <img src="-b.png" alt="Bootstrap" width="300">
             </a>
             <!--botones de navegación-->
-            <div class="btn-group aladin-regular">
-                <a href="inicio.html" class="btn active-border border-0" aria-current="page">Inicio</a>
-                <a href="Arte y Cultura.html" class="btn active-border border-0 " aria-current="page">Arte y Cultura</a>
-                <a href="gastronomia.html" class="btn active-border border-0 " aria-current="page">Gastronomia</a>
+            <div class="btn-group bebas-neue-regular">
+                <div class="btn-group bebas-neue-regular">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            <img src="lupa.png" alt="search" width="25" height="25" />
+                        </button>
+                    </form>
+                    <div class="container mt-1 mb-0.5">
+                        <a href="inicio.html" class="btn active-border border-0" aria-current="page"
+                            style="font-size: 120%;">Inicio</a>
+                        <a href="Arte y Cultura.html" class="btn active-border border-0 " aria-current="page"
+                            style="font-size: 120%;">Arte y
+                            Cultura</a>
+                        <a href="gastronomia.html" class="btn active-border border-0 " aria-current="page"
+                            style="font-size: 120%;">Gastronomia</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <!--portada pag.principal-->
-    <div class="card text-bg-dark">
-        <img src="3.jpg" class="card-img" alt="travel" width="-50">
-        <div class="card-img-overlay align-items-center" style="color: black; height: 400;">
-            <div class="row justify-content-end container text-center container mt-4 mb-4">
-                <div class="col-5">
-                    <h5 class="card-title bebas-neue-regular">Festividades</h5>
-                    <p class="playfair-display-mimi">Las festividades son el alma alegre de Itagüí. Durante todo el año, la ciudad celebra eventos que reúnen música, danza, tradición y diversidad. La más emblemática es la Fiesta de la Industria, el Comercio y la Cultura, donde miles de personas se unen para vivir un ambiente festivo único que resalta el orgullo de pertenecer a esta tierra.</p>
+    <div class="container mt-3 mb-3">
+        <div class="rounded mx-auto d-block">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="3.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family:Bebas Neue;">Eventos y Festividades</h5>
+                            <p class="card-text" style="font-family: Playfair Display;">
+                                Las festividades son el alma alegre de Itagüí. Durante todo
+                                el año, la ciudad celebra eventos que reúnen música, danza, tradición y diversidad. La
+                                más
+                                emblemática es la Fiesta de la Industria, el Comercio y la Cultura, donde miles de
+                                personas se unen para vivir un ambiente festivo único que resalta el orgullo de
+                                pertenecer a esta tierra.
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-<div class="container mt-4 mb-4">
-    <h1>Example heading </h1>
-</div>
-
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+    <div class="container mt-4 mb-4 text-center oswald-normal">
+        <h1>Eventos y fiestas</h1>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+    <div class="container mt-4 mb-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="festival-festivales.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Festival de Festivales</h5>
+                    <p class="card-text">
+                        Itagüí participa cada año con delegaciones deportivas y culturales en el Festival de
+                        Festivales de Antioquia; en 2025 la participación fue en los primeros días de enero
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="industria-comercio.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Fiestas de la Industria, el Comercio y la Cultura de Itagüí</h5>
+                    <p class="card-text">
+                        Es la feria-fiesta más grande del municipio; en 2025 se celebró la versión
+                        34 del 9 al 17 de agosto con más de 120 actividades y conciertos masivos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="dia-pereza.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dia Mundial de la Pereza</h5>
+                    <p class="card-text">
+                        Es la jornada más característica y concurrida de las fiestas itagüiseñas:
+                        mucha afluencia, actividades callejeras y espectáculo público.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="hallowen.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gran Desfile y celebraciones de Halloween en Itagüí</h5>
+                    <p class="card-text">Desfiles, cierre de vías, concursos de disfraces y eventos en Santa María y
+                        otros sectores. (2025 tuvo programación oficial el 31-oct).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="navidad.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ensedido Navideño/"Navidad para todos" y espectáculos de fin de año</h5>
+                    <p class="card-text">
+                        Durante diciembre, Itagüí se llena de luces, eventos culturales y actividades
+                        para toda la familia, culminando con el tradicional ensendido navideño en la plaza principal.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row row-cols-1 row-cols-md-2 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
     <!--footer-->
     <div>
         <footer class="bg-body-tertiary text-center text-lg-start">
@@ -135,4 +150,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
 </html>
