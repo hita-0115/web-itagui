@@ -12,59 +12,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <!-- logo y nombre del proyecto -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar" style="background-color: #e3f2fd;" data-bs-theme="light" class="navbar bg-body-tertiary">
         <div class="container" style="display: flex; flex-direction: row;">
             <a class="navbar-brand" href="#">
                 <img src="-b.png" alt="Bootstrap" width="300">
             </a>
             <!--botones de navegación-->
-            <div class="btn-group aladin-regular">
-                <a href="inicio.html" class="btn active-border border-0" aria-current="page">Inicio</a>
-                <a href="Arte y Cultura.html" class="btn active-border border-0 " aria-current="page">Arte y Cultura</a>
-                <a href="Eventos y Festividades.html" class="btn active-border border-0 " aria-current="page">Eventos y
-                    Festividades</a>
+            <div class="btn-group bebas-neue-regular">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        <img src="lupa.png" alt="search" width="25" height="25" />
+                    </button>
+                </form>
+                <div class="container mt-1 mb-0.5">
+                    <a href="inicio.html" class="btn active-border border-0" aria-current="page"
+                        style="font-size: 120%;">Inicio</a>
+                    <a href="Arte y Cultura.html" class="btn active-border border-0 " aria-current="page"
+                        style="font-size: 120%;">Arte y Cultura</a>
+                    <a href="Eventos y Festividades.html" class="btn active-border border-0 " aria-current="page"
+                        style="font-size: 120%;">Eventos y Festividades</a>
+                </div>
             </div>
-        </div>
     </nav>
     <!--portada pag.principal-->
-<div class="rounded mx-auto d-block" style="width: 60%;">
-    <div class="card text-bg-dark ">
-        <img src="1.2.jpg" class="card-img " alt="travel" width="-50">
-        <div class="card-img-overlay align-items-center" style="color: black; height: 400;">
-            <div class="row justify-content-end container text-center container mt-4 mb-4">
-                <div class="col-5">
-                    <h5 class="card-title bebas-neue-regular">Gastronomía</h5>
-                    <p class="playfair-display-mimi">La gastronomía itagüiseña es un homenaje a la tradición antioqueña.
-                        En sus restaurantes y calles se encuentran sabores auténticos que mezclan recetas ancestrales
-                        con propuestas innovadoras. Desde una bandeja paisa bien servida hasta postres típicos y cafés
-                        artesanales, cada bocado es una invitación a disfrutar la esencia de su gente.</p>
+    <div class="container mt-3 mb-3">
+        <div class="rounded mx-auto d-block">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="1.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family:Bebas Neue;">Gastronomia</h5>
+                            <p class="card-text" style="font-family: Playfair Display;">La gastronomía itagüiseña es un
+                                homenaje a la tradición
+                                antioqueña. En sus restaurantes y calles se encuentran sabores auténticos que mezclan
+                                recetas ancestrales
+                                con propuestas innovadoras. Desde una bandeja paisa bien servida hasta postres típicos y
+                                cafésartesanales, cada bocado es una invitación a disfrutar la esencia de su gente.</p>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>    
-    <div class="container mt-4 mb-4">
+    <div class="container mt-4 mb-4 text-center oswald-normal">
         <h1>Restaurantes</h1>
     </div>
-
-    <div class="row">
-
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="burrata.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Burrata Artesanal</h5>
-                            <p class="card-text">
+    <div class="contenido">
+        <div class="row">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="burrata.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Burrata Artesanal</h5>
+                                <p class="card-text">
                                 <ol>
                                     Ubicado en: ibis budget Medellín Itagüí Metro
                                     Dirección: Cl. 50 #40-17, Itagüi, Antioquia
@@ -72,48 +87,49 @@
                                     Teléfono: 300 9970979
                                     Precio por persona: $20,000-30,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4,5 ⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/burrata_express/" class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4,5 ⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="parche-aqui.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Parche aquí Cocina Artesanal</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="parche-aqui.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Parche aquí Cocina Artesanal</h5>
+                                <p class="card-text">
                                 <ol>
                                     Dirección: Cl. 33 #50-17, Camparola, Itagüi, Antioquia
                                     Horario: 3p.m-11:30p.m.
                                     Teléfono: 45374759
                                     Opciones de servicio: Asientos al aire libre, se permiten perros afuera de local
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.0 ⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/elparchedelasburgers/"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.0 ⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="lisbon.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Lisbon Restobar</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="lisbon.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Lisbon Restobar</h5>
+                                <p class="card-text">
                                 <ol>
                                     Dirección: Cra. 69 #30-03, Triana, Itagüi, Antioquia
                                     Horario: 5p.m a 10p.m.
@@ -121,49 +137,50 @@
                                     Precio por persona: $20,000-30,000
                                     Opciones de servicio: Asientos al aire libre · Buenos cócteles · Platos vegetarianos
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.9 ⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/lisbon_rest/" class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.9 ⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Juanjo's Parrilla.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Juanjo's Parrilla</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Juanjo's Parrilla.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Juanjo's Parrilla</h5>
+                                <p class="card-text">
                                 <ol>
-                                Dirección: Cra. 48 #45-39, Villa Paula, Itagüi, Antioquia
-                                Horario:3p.m a 10p.m.
-                                Teléfono: 310 5348243
-                                Precio por persona: $20,000-40,000
-                                Opciones de servicio: Asientos al aire libre · Buenos cócteles · Platos vegetarianos
+                                    Dirección: Cra. 48 #45-39, Villa Paula, Itagüi, Antioquia
+                                    Horario:3p.m a 10p.m.
+                                    Teléfono: 310 5348243
+                                    Precio por persona: $20,000-40,000
+                                    Opciones de servicio: Asientos al aire libre · Buenos cócteles · Platos vegetarianos
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.6 ⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/juanjosparrilla/?hl=es"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.6 ⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Fonda-Bitagüí.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Fonda Bitagüí</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Fonda-Bitagüí.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Fonda Bitagüí</h5>
+                                <p class="card-text">
                                 <ol>
                                     Dirección: Cra. 51 #52-25, Villa Paula, Itagüi, Antioquia
                                     Horario: 12m a 9p.m.
@@ -171,176 +188,209 @@
                                     Precio por persona aproximado: Más de $200,000
                                     Opciones de servicio: Buenos cócteles, menú para niños
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.5 ⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/fondabitagui/?hl=es"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.5 ⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="La terraza de moda.jpeg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">La terraza de moda</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="La terraza de moda.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">La terraza de moda</h5>
+                                <p class="card-text">
                                 <ol>
-                                    Dirección: Super Centro de la Moda, Cra. 52D #81-15 Segundo piso, Santa Maria II, Santa María, Itagüi, Antioquia
+                                    Dirección: Super Centro de la Moda, Cra. 52D #81-15 Segundo piso, Santa Maria II,
+                                    Santa
+                                    María, Itagüi, Antioquia
                                     Horario: 8a.m a 9p.m.
                                     Teléfono: 313 5159241
                                     Precio por persona aproximado: $20,000-30,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.2 ⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/laterrazademoda/?hl=es-la"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.2 ⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Rústico-Parrilla.jpeg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Rústico Parrilla</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Rústico-Parrilla.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Rústico Parrilla</h5>
+                                <p class="card-text">
                                 <ol>
                                     Dirección: Cra. 51 #48-18, Villa Paula, Itagüi, Antioquia
                                     Horario: 12m a 10p.m.
                                     Teléfono: 604 5008169
                                     Precio por persona: $20,000-30,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.3⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/rusticocomidaprimitiva/?hl=es"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.3⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>        
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="cojale-el-sabor.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Cojale El Sabor</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="cojale-el-sabor.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Cojale El Sabor</h5>
+                                <p class="card-text">
                                 <ol>
-                                    Dirección: Cra. 45A #64-18, La Esmeralda, Itagüi, Antioquia 
+                                    Dirección: Cra. 45A #64-18, La Esmeralda, Itagüi, Antioquia
                                     Horario: 6a.m a 11p.m.
                                     Teléfono: 312 3273778
                                     Precio por persona aproximado: $10,000-20,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.7⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/cojale_el_sabor_/" class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.7⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>        
-        <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Carpión-Rooftop.jpeg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Carpión Rooftop Restaurante & Bar</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Carpión-Rooftop.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Carpión Rooftop Restaurante & Bar</h5>
+                                <p class="card-text">
                                 <ol>
                                     Dirección: Cl. 65 #44b - 68, La Esmeralda, Itagüi, Antioquia
                                     Horario: 12-2:30p.m,6-10p.m.
                                     Teléfono: 304 5244407
                                     Precio por persona aproximado: $20,000-30,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.5⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/carpionrooftop?igsh=cm8zajh5NHpkc2U1"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.5⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-                <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Cheesy.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Cheesy Restaurante & Gelatería</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Cheesy.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Cheesy Restaurante & Gelatería</h5>
+                                <p class="card-text">
                                 <ol>
                                     Dirección: Cra. 52D # 66 - 46, Itagüi, Antioquia
                                     Horario: 2p.m. a 10p.m.
                                     Teléfono: 300 4065216
                                     Precio por persona aproximado: $20,000-30,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.8⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/cheesy.med/" class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.8⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-                <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Panzer.jpeg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Panzer restaurante bar</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Panzer.jpeg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Panzer restaurante bar</h5>
+                                <p class="card-text">
                                 <ol>
                                     Dirección: Cl. 65 # 45 a 22, Riachuelos, Itagüi, Antioquia
                                     Horario: 12-3p.m., 5-10p.m.
                                     Teléfono: 604 6029216
                                     Precio por persona aproximado: $20,000-30,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 4.6⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/panzer_restaurantebar?igsh=N3A1b3UxcDd0cW9j"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 4.6⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-                <div class="col-5">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="Milkshake.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Milkshake</h5>
-                            <p class="card-text">
+            <div class="col-5">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Milkshake.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Milkshake</h5>
+                                <p class="card-text">
                                 <ol>
-                                    Dirección:  Cl. 65 #45a-30, Riachuelos, Itagüi, Simon, Bolivar
+                                    Dirección: Cl. 65 #45a-30, Riachuelos, Itagüi, Simon, Bolivar
                                     Horario: 3p.m a 10p.m.
                                     Teléfono: 302 3240003
                                     Precio por persona aproximado: $20,000-30,000
                                 </ol>
-                            </p>
-                            <p class="card-text"><small class="text-body-secondary">Puntuación 3.8⭐</small></p>
+                                </p>
+                                <a href="https://www.instagram.com/milkshakeitagui/?hl=es"
+                                    class="btn btn-info">Instagram</a>
+                                <p class="card-text"><small class="text-body-secondary">Puntuación 3.8⭐</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <!--footer-->
     <div>
         <footer class="bg-body-tertiary text-center text-lg-start">
