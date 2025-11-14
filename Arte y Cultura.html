@@ -1,52 +1,177 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Arte y Cultura</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte y Cultura</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" href="-b-02.png" type="image/png">
     <link rel="stylesheet" href="web-css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    </head>
-    <body>
-        <!-- logo y nombre del proyecto -->
-    <nav class="navbar bg-body-tertiary">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- logo y nombre del proyecto -->
+    <nav class="navbar" style="background-color: #e3f2fd;" data-bs-theme="light" class="navbar bg-body-tertiary">
         <div class="container" style="display: flex; flex-direction: row;">
             <a class="navbar-brand" href="#">
                 <img src="-b.png" alt="Bootstrap" width="300">
             </a>
             <!--botones de navegación-->
-            <div class="btn-group aladin-regular">
-                <a href="inicio.html" class="btn active-border border-0" aria-current="page">Inicio</a>
-                <a href="gastronomia.html" class="btn active-border border-0 " aria-current="page">Gastronomia</a>
-                <a href="Eventos y Festividades.html" class="btn active-border border-0 " aria-current="page">Eventos y Festividades</a>
+            <div class="btn-group bebas-neue-regular">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        <img src="lupa.png" alt="search" width="25" height="25" />
+                    </button>
+                </form>
+                <div class="container mt-1 mb-0.5">
+                    <a href="inicio.html" class="btn active-border border-0" aria-current="page" style="font-size: 120%;">Inicio</a>
+                    <a href="gastronomia.html" class="btn active-border border-0 " aria-current="page" style="font-size: 120%;">Gastronomia</a>
+                    <a href="Eventos y Festividades.html" class="btn active-border border-0 "aria-current="page" style="font-size: 120%;">Eventos y Festividades</a>
+                </div>
             </div>
         </div>
     </nav>
     <!--portada pag.principal-->
-    <div class="card text-bg-dark">
-        <img src="2.jpg" class="card-img" alt="travel" width="-50">
-        <div class="card-img-overlay align-items-center" style="color: black; height: 400;">
-            <div class="row justify-content-end container text-center container mt-4 mb-4">
-                <div class="col-5">
-                    <h5 class="card-title bebas-neue-regular">Arte y Cultura</h5>
-                    <p class="playfair-display-mimi">Itagüí es un municipio que respira arte en cada esquina. Sus espacios culturales, escenarios al aire libre y festivales permanentes dan vida a una comunidad creativa y diversa. Murales, presentaciones artísticas y exposiciones reflejan el talento local, convirtiendo a la ciudad en un punto de encuentro para quienes aman y defienden la cultura.</p>
+  <div class="container mt-3 mb-3">
+        <div class="rounded mx-auto d-block">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="2.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family:Bebas Neue;">Arte y Cultura</h5>
+                            <p class="card-text" style="font-family: Playfair Display;">Itagüí es un municipio que respira arte en cada esquina.
+                                Susespacios culturales, escenarios al aire libre y festivales permanentes dan vida a una
+                                comunidad creativa y diversa. Murales, presentaciones artísticas y exposiciones reflejan el talento local,
+                                convirtiendo a la ciudad en un punto de encuentro para quienes aman y defienden la cultura.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-<div class="container mt-4 mb-4">
-    <h1>Example heading </h1>
-</div>
-
-
-
+    <div class="container mt-4 mb-4 text-center oswald-normal" >
+        <h1>localizaciones</h1>
+    </div>
+    <div class="container mt-4 mb-4">
+        <div class="card-group">
+            <div class="card">
+                <img src="casa-cultura.jpeg" class="card-img-top" alt="..." style="max-height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Casa de la Cultura de Itagüí</h5>
+                    <p class="card-text">
+                        Dirección: Cl. 36 #57- 59, Pilsen, Itagüi, Antioquia
+                        Horario de atención: 8a.m. a 10p.m. Lunes a sabado
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Puntuación 4.6⭐</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="t-caribe.jpg" class="card-img-top" alt="..." style="max-height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Centro Cultural Caribe</h5>
+                    <p class="card-text">
+                        Dirección: Cra. 50 #52-77, Villa Paula, Itagüi, Antioquia
+                        Horario de atención: 8a.m. a 5p.m. Lunes a sabado
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Puntuación 4.8⭐</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="niebles.jpg" class="card-img-top" alt="..." style="max-height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Niebles Producciones Artísticas</h5>
+                    <p class="card-text">
+                        Dirección: Cl 64B #44c-3, La Esmeralda, Medellín, Itagüi, Antioquia
+                        Horario de atención: 9a.m. a 5p.m. Lunes a sabado
+                    </p>
+                    <p class="card-text"><small class="text-body-secondary">Puntuación 5.0 ⭐</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-4">
+            <div class="card-group">
+                <div class="card">
+                    <img src="el-hormigero.png" class="card-img-top" alt="..." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundación Cultural El Hormiguero</h5>
+                        <p class="card-text">
+                            Dirección: Unnamed Road, Itagüi, Antioquia
+                            Horario de atención: 8a.m. a 5p.m. Lunes a viernes y 9a.m. a 1p.m. sabado
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Puntuación 4.8⭐</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="museo-gracialiano.png" class="card-img-top" alt="..." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Museo Graciliano Arcila Vélez</h5>
+                        <p class="card-text">
+                            Dirección: Cra. 57 #46c35, Fatima, El Rosario, Itagüi, Antioquia
+                            Horario de atención: 9a.m. a 5p.m. viernes y sabado
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Puntuación 4.4⭐</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="artista.jpg" class="card-img-top" alt="..." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Parque del Artista</h5>
+                        <p class="card-text">
+                            Dirección: Cl. 60 &, Cra. 52, Itagüi, Antioquia
+                            Horario: Abierto las 24 horas
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Puntuación 4.5⭐</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-4">
+            <div class="card-group">
+                <div class="card">
+                    <img src="audi-biblio..jpg" class="card-img-top" alt="..." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Auditorio biblioteca de itagui</h5>
+                        <p class="card-text">
+                            Dirección: Cl. 49 #48-77, Villa Paula, Itagüi, Antioquia
+                            Horario de atención: 10a.m. a 7p.m. Lunes a viernes 10a.m. a 3p.m. sabado
+                        </p <p class="card-text"><small class="text-body-secondary">Puntuación 5.0⭐</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="casa-museo.jpg" class="card-img-top" alt="..." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">la Casa Museo Ditaires</h5>
+                        <p class="card-text">
+                            Dirección: Pilsen, Itagüi, Antioquia
+                            Horario de atención: 9a.m. a 4p.m. Lunes a sabado
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Puntuación 4.7⭐</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Estacin-Yarumito.jpg" class="card-img-top" alt="..." style="max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">la Antigua Estación Yarumito</h5>
+                        <p class="card-text">
+                            Dirección: Cl 29A #5053 50a- a, Itagüi, Antioquia
+                            Horario de atención: ?
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Puntuación 4.1⭐</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--footer-->
     <div>
         <footer class="bg-body-tertiary text-center text-lg-start">
@@ -56,8 +181,9 @@
             </div>
         </footer>
     </div>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-    </html>
+
+</html>
