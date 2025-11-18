@@ -40,6 +40,8 @@
                         style="font-size: 120%;">Arte y Cultura</a>
                     <a href="Eventos y Festividades.html" class="btn active-border border-0 " aria-current="page"
                         style="font-size: 120%;">Eventos y Festividades</a>
+                    <a href="Mapa.html" class="btn active-border border-0 " aria-current="page"
+                        style="font-size: 120%;">Mapa</a>
                 </div>
             </div>
         </div>
@@ -73,39 +75,16 @@
             </div>
         </div>
     </div>
-    <!--mapa-->
-    <div class="container mt-3 mb-3">
-        <h2 class="text-center playfair-display-mimi">Ubicación de Itagüí, Antioquia</h2>
-        <div id="map" style="height: 400px; width: 400;"></div>
-    </div>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-        // Inicializa el mapa centrado (lat, lon) y con zoom
-        const map = L.map('map').setView([6.1726, -75.6096], 15); // ejemplo: Itagüí, Colombia
-
-        // Capa de teselas (OpenStreetMap)
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Marcador de ejemplo con popup
-        L.marker([6.1734565, -75.6083524]).addTo(map)
-            .bindPopup('<b>Itagüí, Colombia</b><br>Fonda Bitagui.')
-            .openPopup();
-
-        // Añade control de escala
-        L.control.scale().addTo(map);
-    </script>
-
     <!--footer-->
     <div>
         <footer class="bg-body-tertiary text-center text-lg-start">
             <div class="text-center p-3" style="background-color:lightskyblue;">
                 © 2025 Copyright:
                 <a class="text-dark" href="https://mdbootstrap.com/">TravelTree.com</a>
+                <ol>
+                <a class="text-dark" href="https://www.instagram.com/travel.tree_/">Instagram @travel.tree_</a>
+                </ol>
+                <img src="-b-02.png" alt="Bootstrap" width="100"  >
             </div>
         </footer>
     </div>
