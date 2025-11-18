@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELTREE</title>
+    <link rel="stylesheet" href="web-css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aladin&family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="-b-02.png" type="image/png">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <!-- logo y nombre del proyecto -->
+    <nav class="navbar" style="background-color: #e3f2fd;" data-bs-theme="light" class="navbar bg-body-tertiary">
+        <div class="container" style="display: flex; flex-direction: row;">
+            <a class="navbar-brand" href="#">
+                <img src="-b.png" alt="Bootstrap" width="300">
+            </a>
+            <!--botones de navegación-->
+            <div class="btn-group bebas-neue-regular">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        <img src="lupa.png" alt="search" width="25" height="25" />
+                    </button>
+                </form>
+                <div class="container mt-1 mb-0.5 ">
+                    <a href="inicio.html" class="btn active-border border-0 " aria-current="page"
+                        style="font-size: 120%;">Inicio</a>
+                    <a href="gastronomia.html" class="btn active-border border-0" aria-current="page"
+                        style="font-size: 120%;">Gastronomia</a>
+                    <a href="Arte y Cultura.html" class="btn active-border border-0 " aria-current="page"
+                        style="font-size: 120%;">Arte y Cultura</a>
+                    <a href="Eventos y Festividades.html" class="btn active-border border-0 " aria-current="page"
+                        style="font-size: 120%;">Eventos y Festividades</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <!--mapa-->
+        <div class="container mt-3 mb-3">
+            <h2 class="text-center Oswald">Ubicación de Itagüí, Antioquia</h2>
+            <div id="map" style="height: 400px; width: 400;"></div>
+        </div>
+
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+            // Inicializa el mapa centrado (lat, lon) y con zoom
+            const map = L.map('map').setView([6.1787416305029375, -75.59770766441804], 15); // ejemplo: Itagüí, Colombia
+
+            // Capa de teselas (OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            // Marcador de ejemplo con popup
+            L.marker([6.1787416305029375, -75.59770766441804]).addTo(map)
+                .bindPopup('<b>Milkshake</b><br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.181922694156748, -75.60049762591481]).addTo(map)
+                .bindPopup('</b>Cheesy Restaurante<br>Itagüí, Colombia.')
+                .openPopup();            
+            L.marker([6.177716482168845, -75.59800952582788]).addTo(map)
+                .bindPopup('</b>Cojale el sabor<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.173545316147321, -75.60834850535458]).addTo(map)
+                .bindPopup('</b>Fonda Bitagüí<br>Itagüí, Colombia.')
+                .openPopup();            
+            L.marker([6.168972004892753, -75.61225019916073]).addTo(map)
+                .bindPopup('</b>Juanjo´s Parrilla<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.172817679922178, -75.61112504216536]).addTo(map)
+                .bindPopup('</b>Rustico Parrilla<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.1786196992684905, -75.59766302803216]).addTo(map)
+                .bindPopup('</b>Panzer restaurante bar<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.178435056806315, -75.59713333322134]).addTo(map)
+                .bindPopup('</b>Carpión Rooftop Restaurante & Bar<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.190353319372643, -75.59466057554906]).addTo(map)
+                .bindPopup('</b>La terraza de moda<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.1725199265065545, -75.63769029089359]).addTo(map)
+                .bindPopup('</b>Lisbon Restobar<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.16475759651063, -75.60635010623795]).addTo(map)
+                .bindPopup('</b>Burrata Artesanal<br>Itagüí, Colombia.')
+                .openPopup();
+
+    var greenIcon = new L.Icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+            L.marker([6.169358010872552, -75.62831741499147],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Casa Museo Diataires<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.176472567946081, -75.61368389131226],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Museo Graciliano Arcila Véle<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.16927735333501, -75.62594322669175],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Casa de la cultura<br>Itagüí, Colombia.')
+                .openPopup();        
+            L.marker([6.172882367231724, -75.60763948060018],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Centro Cultural Caribe<br>Itagüí, Colombia.')
+                .openPopup();        
+            L.marker([6.177916118599526, -75.60307789759003],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Parqure del Artista<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.172317133104521, -75.61094608589659],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Auditorio Biblioteca <br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.163012703567181, -75.62263823130895],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Antigua Estación Yarumito<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.1778052917755835, -75.5972740774018],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Niebles Produccciones Artisticas<br>Itagüí, Colombia.')
+                .openPopup();
+            L.marker([6.188284171589188, -75.61508764304159],{ icon: greenIcon }).addTo(map)
+                .bindPopup('</b>Fundación el Hormiguero<br>Itagüí, Colombia.')
+                .openPopup();
+            // Añade control de escala
+            L.control.scale().addTo(map);
+        </script>
+
+        <!--footer-->
+        <div>
+            <footer class="bg-body-tertiary text-center text-lg-start">
+                <div class="text-center p-3" style="background-color:lightskyblue;">
+                    © 2025 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">TravelTree.com</a>
+                <ol>
+                <a class="text-dark" href="https://www.instagram.com/travel.tree_/">Instagram @travel.tree_</a>
+                </ol>
+                <img src="-b-02.png" alt="Bootstrap" width="100"  >                    
+                </div>
+            </footer>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
